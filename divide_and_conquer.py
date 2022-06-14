@@ -26,7 +26,10 @@ def checkVZW(x, x_oben):
     global rek_aufrufe
 
     # Abbruchbedingung
-    if (f(x_oben) == 0 or f(x) == 0):
+    if (f(x_oben) == 0):
+        nullstellen.append(x_oben)
+        return x
+    if (f(x) == 0):
         nullstellen.append(x)
         return x
 
